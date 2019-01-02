@@ -1,0 +1,126 @@
+body {
+    margin: 0px; 
+    padding: 0px;
+}
+
+*{
+    font-family: 'Roboto';
+    font-weight: 100;
+    /* line-height: 1.6em; */
+}
+
+/*------------------ navbar---------- */
+
+.navbar {
+    display: grid; 
+    height: 50px;
+    /* background-color: #0074D9; */
+    grid-template-columns: 1fr; 
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    grid-template-areas: 
+    "nav-brand"
+    
+    
+}
+.nav-brand {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-area: nav-brand;
+    height: 100%;
+    margin-left: 20px;
+    
+}
+.nav-brand > h1 {
+    margin-left: 10px;
+}
+
+ /* ---------main area index page all product------ */
+
+
+/* -----Text main----- */
+.cover {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    grid-template-areas: 
+    "cover-heading cover-heading"
+    "cover-text cover-text"
+}
+.cover-heading {
+    grid-area: cover-heading;  
+    display: grid; 
+    justify-content: center;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+}
+.cover-text{
+    grid-area: cover-text;
+    display: grid; 
+    justify-content: center;
+    text-align: center;
+}
+
+/* -------------- New card design ------- */
+
+.card-2 {
+    display: grid; 
+    grid-template-columns: 1fr;
+    border: 1px sold red;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px sold red;
+    margin-bottom: 15px;
+    grid-template-areas: 
+    "heading heading heading"
+    "card-area card-area card-area"
+    "btn-2 btn-2 btn-2"
+}
+.heading{
+    display: grid;
+    background-color: #181E23;
+    color: #fff;
+    justify-content: center;
+    grid-area: heading;
+    border-radius: 5px 5px 0px 0px;
+}
+.card-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-area: card-area;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 0px 0px 5px 5px;
+    grid-template-areas: 
+    "prod-img prod-img"
+    "prod-info prod-info"
+}
+.prod-img{
+    display: grid;
+    grid-area: prod-img;
+    justify-content: center;
+}
+.prod-info{
+    display: grid;
+    grid-area: prod-info;
+    justify-content: center;
+}
+.btn-2{
+    display: grid;
+    justify-content: center;
+    grid-area: btn-2;
+    color: #fff; 
+    /* background-color: #3BE2AB; */
+    background-color: #3DB1FF;
+    margin-top: 5px;
+    border-radius: 50px;
+}
