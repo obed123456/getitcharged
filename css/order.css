@@ -1,0 +1,81 @@
+.ord-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "ord-nav"
+    "ord-main"
+    "ord-cal"
+    "ord-form"
+}
+.ord-nav{
+    display: grid;
+    grid-area: ord-nav;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: blueviolet;
+    grid-template-areas: 
+    "ord-nav-arrow order-nav-heading ."
+}
+.ord-main{
+    display: grid;
+    grid-area: ord-main;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-areas: 
+    "ord-img"
+    "ord-date"
+}
+.ord-form{
+    display: grid;
+    grid-area: ord-form;
+    justify-content: center;
+}
+
+.ord-nav-arrow{
+    grid-area: ord-nav-arrow;
+    display: grid;
+    align-self: center;
+}
+.order-nav-heading{
+    grid-area: order-nav-arrow;
+    display: grid;
+    align-self: center;
+}
+.ord-img{
+    display: grid; 
+    grid-area: ord-img;
+    justify-content: center;
+
+}
+.ord-date{
+    display: grid;
+    grid-area: ord-date;
+    justify-content: center;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas: 
+    "ord-d-start ord-d-end"
+}
+
+.ord-d-start{
+    display: grid;
+    grid-area: ord-d-start;
+    justify-content: center;
+}
+.ord-d-end{
+    display: grid; 
+    grid-area: ord-d-end;
+    justify-content: center;
+}
+
+.ord-form{
+display: grid;
+grid-area: ord-form;
+}
+
+.ord-cal {
+    display: grid;
+    grid-area: ord-cal;
+}
+.ord-f-input{
+    display: grid;
+    
+}

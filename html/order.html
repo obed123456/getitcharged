@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Place your order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/order.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/station.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+</head>
+<body>
+    <div class="ord-container">
+        <div class="ord-nav">                                             
+            <!-- navbar -->
+            <div class="ord-nav-arrow">
+                <a href="./station1.html">
+                <img src="../assets/arrow-2x/baseline_arrow_back_black_18dp.png" alt="Back">
+                </a>
+            </div>
+            <div class="ord-nav-heading">
+                <h3 style="color:white;">Place your order</h3>
+            </div>
+        </div>
+        <!-- Order details -->
+          <div class="ord-main">
+
+            <!-- order image -->
+            <div class="ord-img">
+              <img src="../assets/img/6-fack-golv-ink-tryck.png" alt="6-fack" style="height: 80px;">
+            </div>
+            <!-- order date -->
+            <div class="ord-date">
+              <div class="ord-d-start">
+                <label>Startdatum</label><br>
+                <input type="date">
+              </div>
+              <div class="ord-d-end">
+                  <label>Slutdatum</label><br>
+                  <input type="date">
+              </div>
+            </div>
+          </div>
+          
+          <!-- price calculate -->
+          <div class="ord-cal">
+            <button>Calculate Price</button>
+          </div>
+
+        <!-- contract form -->
+          <div class="ord-form">
+            <form action="#" class="ord-f-input">
+                <label>Namn/Företag</label>
+                <input type="text" name="organisation">
+                <label>Organisation nummer</label>
+                <input type="number" name="address">
+                <label>Adress</label>
+                <input type="text" name="addess">
+                <label>Postnummer</label>
+                <input type="number" name="postnumber">
+                <label>Ort</label>
+                <input type="text" name="area">
+                <label>E-mail</label>
+                <input type="email" name="email">
+                <label>Telefon</label>
+                <input type="tel" name="tel">
+                <label>Meddelande</label>
+                <input type="text" name="message">
+                <button>Skicka</button>
+            </form>
+          </div>
+
+    </div>
+   
+    <script src="../js/order.js"></script>
+</body>
+</html>
