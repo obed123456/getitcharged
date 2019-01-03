@@ -5,13 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>6-fack golv, ink tryck</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/tab.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/modal.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/station.css" />
 </head>
 <body>
-    
+        <!-- st stands for station -->
+        <div class="st-container">
+
+            <!-- navbar -->
+            <div class="st-nav text-desc-heading">
+              <div class="st-nav-arrow">
+                <a href="../index.html">
+                  <img src="../assets/arrow-2x/baseline_arrow_back_black_18dp.png" alt="Back">
+                </a>
+              </div>
+              <div class="st-nav-heading">
+                <h2 style="color:white;">ITM 6-fack golv</h2>
+              </div>
+            </div>
+
+            <!-- image -->
+            <div class="st-img">
+                <div class="st-img-center">
+                    <img src="../assets/img/6-fack-golv-ink-tryck.png" alt="Laddningssstaion" style="height: 300px; width: 200;">
+                </div>
+            </div>
+
+            <!-- tabs -->
+            <div class="st-tab">
+                <div class="st-tab-price">
+                  <div class="hire-button">
+                      <p>fr. 3000 kr/dag</p>
+                      <div class="btn-primary"><a>Hyr</a></div>
+                  </div>
+                </div>
+                <div class="st-tab-tabs">
+                  <div class="tab">
+                      <button class="tablinks active" onclick="openCity(event, 'London')">Produktbeskrivning</button>
+                      <button class="tablinks" onclick="openCity(event, 'Paris')">Specifikation</button>
+                      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Villkor</button>
+                    </div>
+                    
+                    <div id="London" class="tabcontent" style="display:block;">
+                      <h3>Produktbeskrivning</h3>
+                      <ul class="produkt-beskrivning">
+                          <li>6 kamrar för mobiltelefoner</li>
+                          <li>4 olika kontaktmöjligheter</li>
+                          <li>Låsning med kortläsare</li>
+                          <li>Tryck skylt omkring laddstation</li>
+                          <li>Eget content</li>
+                          <li>D x B x H 153 x 330 x 1880 mm </li>
+                          <li>Vikt 15 kg</li>
+                          <li>14" Skärm</li>
+                      </ul>
+                    </div>
+                    
+                    <div id="Paris" class="tabcontent">
+                      <h3>Specifikation</h3>
+                      <ul class="produkt-beskrivning">
+                          <li>Trcyk skylt med ditt budskap</li>
+                          <li>Ändrat till ditt content i skärm</li>
+                          <li>Transport i Sverige</li>
+                          <li>Försäkring</li>
+                      </ul> 
+                    </div>
+                    
+                    <div id="Tokyo" class="tabcontent">
+                      <h3>Villkor</h3>
+                      <ul class="produkt-beskrivning">
+                          <li>Leveranstid 12 veckor efter order</li>
+                          <li>30 dagar netto 20 % á conto vid order resterande vid leverans.</li>
+                      </ul> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- how it works button -->
+            <div class="st-modal">
+                <div class="st-modal-btn">
+                    <div class="btn-guide">
+                            <div class="btn-info" id="myBtn"><a>Hur fungerar det?</a></div>
+                    </div>
+                </div>
+            </div>
 
 
+        </div>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Hur fungerar det..</p>
+            </div>
+        </div>
+
+    <script src="../js/tab.js   "></script>
+    <script src="../js/modal.js"></script>
     <script src="../js/app.js"></script>
 </body>
 </html>

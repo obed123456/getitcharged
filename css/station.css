@@ -1,0 +1,180 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 10px;
+    grid-template-areas: 
+    "prod-img prod-img"
+    "prod-des prod-des"
+}
+.prod-img{
+    grid-area: prod-img; 
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+.prod-des{
+    grid-area: prod-des;
+    justify-content: center;
+}
+.main-img{
+    display: grid; 
+    grid-template-columns: 10% 80% 10%;
+    grid-template-areas: 
+    "arrow-left image arrow-right"
+}
+.image {
+    grid-area: image;
+    display: grid;
+    justify-content: center;
+}
+
+/* Description goes here */
+
+.prod-des {
+    display: grid; 
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-top: 10px;
+    grid-template-areas: 
+    "hire-button"
+    "prod-desc-detail"
+    "btn-guide"
+}
+.text-desc-heading {
+    display: grid;
+    justify-content: center;
+    background-color: blueviolet;
+}
+.hire-button{
+    margin-top: 10px;
+    grid-area: hire-button;
+    display: grid;
+    justify-content: center;
+}
+.prod-desc-detail {
+    margin-top: 10px;
+    line-height: 2em;
+    grid-area: prod-desc-detail;
+    display: grid;
+    justify-content: center;
+}
+
+.btn-guide {
+    margin-top: 10px;
+    grid-area: btn-guide;
+    display: grid;
+    justify-content: center;
+}
+.btn-info{
+    margin-top: 10px;
+    padding:5px;
+    padding-right: 10px; 
+    padding-left:10px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+.btn-info:hover{
+    color: white; 
+    background-color: blueviolet;
+    cursor: pointer;
+}
+.btn-primary {
+    margin: 5px;
+    color: white;
+    background-color: blueviolet;
+    text-align: center;
+    padding: 5px;
+}
+
+ul{
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/treehouse-marker.png);
+}
+
+
+.border {
+    border: 1px solid red;
+}
+/*-------------new CSS------------------*/
+
+.st-container{
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "st-nav"
+    "st-img"
+    "st-tab"
+    "st-modal"
+}
+.st-nav{
+    grid-area: st-nav; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "st-nav-arrow st-nav-heading ."
+}
+.st-img{
+    grid-area: st-img;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-content: center;
+    grid-template-areas: 
+    ". st-img-center ."
+    
+}
+.st-tab{
+    grid-area: st-tab;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "st-tab-price"
+    "st-tab-tabs"
+}
+.st-modal{
+    grid-area: st-modal;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "st-modal-btn"
+}
+
+/* navbar detail */
+.st-nav-arrow{
+    grid-area: st-nav-arrow;
+    display: grid;
+    align-self: center;
+}
+.st-nav-heading{
+    grid-area: st-nav-heading;
+    display: grid;
+    justify-content: center;
+}
+
+
+/* Image detail */
+
+.st-img-center{
+    grid-area: st-img-center;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+/* Tabs and price detail */
+
+.st-tab-price {
+    grid-area: st-tab-price; 
+    display: grid;
+    justify-content: center;
+}
+.st-tab-tabs{
+    grid-area: st-tab-tabs;
+    display: grid;
+
+}
+
+/* Modal button detail */
+.st-modal-btn{
+    grid-area: st-modal-btn; 
+    display: grid;
+    justify-content: center;
+}
