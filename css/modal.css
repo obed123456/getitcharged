@@ -3,7 +3,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 30px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -14,11 +14,15 @@
   }
 /* Modal Content */
 .modal-content {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 90%;
+    grid-template-areas: 
+    "modal-content-close"
+    "modal-content-body"
   }
   
   /* The Close Button */
@@ -35,3 +39,32 @@
     text-decoration: none;
     cursor: pointer;
   }  
+
+  .modal-content-close{
+    grid-area: modal-content-close;
+    display: grid;
+    justify-content: end;
+    padding-right: 10px;
+  }
+
+  .modal-content-body {
+      grid-area: modal-content-body;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "modal-content-body-text"
+      "modal-content-body-img"
+  }
+  .modal-content-body-text{
+    grid-area: modal-content-body-text;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
+  .modal-content-body-img{
+    grid-area: modal-content-body-img;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+  }
