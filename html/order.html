@@ -33,19 +33,22 @@
             <div class="ord-date">
               <div class="ord-d-start">
                 <label>Startdatum</label><br>
-                <input type="date">
+                <input type="date" id="start-date">
               </div>
               <div class="ord-d-end">
                   <label>Slutdatum</label><br>
-                  <input type="date">
+                  <input type="date" id="end-date">
               </div>
+              <div id="total-amount"></div>
             </div>
           </div>
           
           <!-- price calculate -->
           <div class="ord-cal">
-            <button>Calculate Price</button>
+            <button id="cal">Calculate Price</button>
           </div>
+
+         
 
         <!-- contract form -->
           <div class="ord-form">
@@ -73,5 +76,6 @@
     </div>
    
     <script src="../js/order.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>

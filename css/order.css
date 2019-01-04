@@ -19,7 +19,7 @@
     display: grid;
     grid-area: ord-main;
     grid-template-columns: 1fr;
-    justify-content: center;
+    /* justify-content: center; */
     grid-template-areas: 
     "ord-img"
     "ord-date"
@@ -27,7 +27,7 @@
 .ord-form{
     display: grid;
     grid-area: ord-form;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .ord-nav-arrow{
@@ -49,7 +49,7 @@
 .ord-date{
     display: grid;
     grid-area: ord-date;
-    justify-content: center;
+    /* justify-content: center; */
     grid-auto-columns: 1fr 1fr;
     grid-template-areas: 
     "ord-d-start ord-d-end"
@@ -58,12 +58,12 @@
 .ord-d-start{
     display: grid;
     grid-area: ord-d-start;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .ord-d-end{
     display: grid; 
     grid-area: ord-d-end;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .ord-form{
@@ -78,4 +78,7 @@ grid-area: ord-form;
 .ord-f-input{
     display: grid;
     
+}
+input{
+    width: 100%;
 }
