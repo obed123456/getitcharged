@@ -7,14 +7,14 @@ document.getElementById('cal').addEventListener('click', function (){
     let endDate = document.getElementById('end-date').value;
     let days = (Date.parse(endDate) - Date.parse(startDate))/(1000*60*60*24);//count days
     let total = document.getElementById('total-amount'); 
-    if(startDate === NaN){
+    if(startDate === ""){
         console.log('startdate is missing');
-    } if(endDate === NaN) {
+    } if(endDate === "") {
         console.log('enddate is missing');
     } else {
         console.log((days * 3000) + ": SEK");
     }
-    return document.getElementById('total-amount').innerHTML = days * 3000 + ": SEK";
+    return document.getElementById('total-amount').innerHTML = "Total hyr för "+ days + " blir:  " +days * 3000 + ": SEK";
 })
 
 //enddate must be higher then startdate 

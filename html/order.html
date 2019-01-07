@@ -27,49 +27,45 @@
 
             <!-- order image -->
             <div class="ord-img">
-              <img src="../assets/img/6-fack-golv-ink-tryck.png" alt="6-fack" style="height: 80px;">
-            </div>
+              <img src="../assets/img/6-fack-golv-ink-tryck.png" alt="6-fack" style="height: 200px;">
+            </div><hr>
             <!-- order date -->
             <div class="ord-date">
               <div class="ord-d-start">
-                <label>Startdatum</label><br>
-                <input type="date" id="start-date">
+                <label>Hämtas</label><br>
+                <input type="date" id="start-date" placeholder="startdatum">
               </div>
               <div class="ord-d-end">
-                  <label>Slutdatum</label><br>
+                  <label>Lämnas</label><br>
                   <input type="date" id="end-date">
               </div>
-              <div id="total-amount"></div>
             </div>
+            <div class="ord-d-total">
+                <p id="take"></p>
+                <p id="leave"></p>
+                <p id="total-amount"></p>
+              </div>
           </div>
           
           <!-- price calculate -->
           <div class="ord-cal">
-            <button id="cal">Calculate Price</button>
+            <input type="button" value="Räkna Pris" id="cal"/>
           </div>
 
          
 
         <!-- contract form -->
-          <div class="ord-form">
+          <div class="ord-form form-style-8" >
             <form action="#" class="ord-f-input">
-                <label>Namn/Företag</label>
-                <input type="text" name="organisation">
-                <label>Organisation nummer</label>
-                <input type="number" name="address">
-                <label>Adress</label>
-                <input type="text" name="addess">
-                <label>Postnummer</label>
-                <input type="number" name="postnumber">
-                <label>Ort</label>
-                <input type="text" name="area">
-                <label>E-mail</label>
-                <input type="email" name="email">
-                <label>Telefon</label>
-                <input type="tel" name="tel">
-                <label>Meddelande</label>
-                <input type="text" name="message">
-                <button>Skicka</button>
+                <!-- <h2>Fyll i fromulär</h2> -->
+                <input type="text" name="organisation" placeholder="Organisationsnummer"/>
+                <input type="text" name="address" placeholder="Address"/>
+                <input type="number" name="postnumber" placeholder="Postnummer"/>
+                <input type="text" name="area" placeholder="Ort"/>
+                <input type="email" name="email" placeholder="Email"/>
+                <input type="tel" name="tel" placeholder="Telefonnummer"/>
+                <textarea name="meddelande"  placeholder="Meddelande" rows="10"></textarea>
+                <input type="submit" value="Skicka" />
             </form>
           </div>
 
