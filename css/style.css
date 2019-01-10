@@ -165,7 +165,7 @@ a{
     
 }
 
-.btn-2 a h3:hover{
+.btn-2 a h4:hover{
     color: #fff;
 }
 
@@ -173,4 +173,15 @@ a{
     margin-right: 10%;
     margin-left: 10%;
 
+}
+
+/* footer */
+
+.footer{
+    background-color: #171717;
+    height: 50px;
+    bottom: 0;
+    display: grid;
+    color: #fff;
+    text-align: center;
 }
