@@ -185,3 +185,11 @@ a{
     color: #fff;
     text-align: center;
 }
+
+/* Screen size less then 576px */
+@media screen and (max-width: 576px) {
+    .btn-text{
+        font-size: 14px;
+    }
+
+}
