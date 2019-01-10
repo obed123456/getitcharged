@@ -172,7 +172,12 @@ a{
 .divider {
     margin-right: 10%;
     margin-left: 10%;
+    padding: 40px;
 
+}
+.brand-divider {
+    margin-right: 10%; 
+    margin-left: 10%;
 }
 
 /* footer */
@@ -185,11 +190,35 @@ a{
     color: #fff;
     text-align: center;
 }
+.prod-info ul {
+    list-style-image: url("./assets/img/checked.png");
+
+}
 
 /* Screen size less then 576px */
 @media screen and (max-width: 576px) {
     .btn-text{
         font-size: 14px;
     }
+
+}
+
+/* Screen size bigger then 720px */
+
+@media only screen and (min-width: 860px){
+    .card-area{
+        grid-template-areas: 
+        "prod-img prod-info"
+    }
+    .prod-info{
+        align-self: center;
+    }
+}
+
+@media only screen and (min-width: 1080px){
+.card-2, .divider, .brand-value, .brand-divider {
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
 }
