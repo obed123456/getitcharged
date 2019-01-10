@@ -14,7 +14,7 @@ document.getElementById('cal').addEventListener('click', function (){
     } else {
         console.log((days * 3000) + ": SEK");
     }
-    return document.getElementById('total-amount').innerHTML = "Total hyr för "+ days + " blir:  " +days * 3000 + ": SEK";
+    return document.getElementById('total-amount').innerHTML = "Total hyra för "+ days + " dagar blir:  " +days * 3000 + ": SEK";
 })
 
 //enddate must be higher then startdate 
